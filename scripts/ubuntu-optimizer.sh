@@ -28,7 +28,7 @@ PROF_PATH="/etc/profile"
 SSH_PORT=""
 SSH_PATH="/etc/ssh/sshd_config"
 SWAP_PATH="/swapfile"
-SWAP_SIZE=2G
+SWAP_SIZE=1G
 
 
 # Root
@@ -554,7 +554,7 @@ find_ssh_port() {
             echo 
             green_msg "SSH port is default 22."
             echo 
-            SSH_PORT=22
+            SSH_PORT=1899
             sleep 0.5
         fi
     else
